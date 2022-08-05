@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-family: "Poppins";
+  padding: 15px;
+}
+.logo {
+  position: relative;
+  left: 50px;
+}
+.grow-list {
+  align-self: center;
+  position: relative;
+  right: 300px;
+}
+.line {
+  border-left: 2px solid white;
+  height: 60px;
+  align-self: center;
+  position: relative;
+  right: 120px;
+}
+.list {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 56px auto auto auto auto;
+  grid-column-gap: 35px;
+}
+.list-item:first-of-type::after {
+  content: "⌄";
+  /* height: 1px; */
+}
+.button-small {
+  width: 130px;
+  height: 34px;
+  position: relative;
+  top: 12px;
+  background-color: rgb(186, 12, 197);
+  border: rgb(186, 12, 197);
+  font-family: "Poppins";
+  color: white;
+  right: 75px;
+  border-radius: 5px;
+  font-size: medium;
+}
+/* Hero section */
+.hero {
+  background-image: url(/assets/bg.png);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 170px;
+}
+.hero-heading {
+  align-self: center;
+  font-family: "Montserrat";
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+.hero-description {
+  align-self: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 35px;
+}
+.button-large {
+  width: 300px;
+  height: 55px;
+  align-self: center;
+  font-family: "Poppins";
+  background-color: rgb(186, 12, 197);
+  border: rgb(186, 12, 197);
+  color: white;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  top: 45px;
+}
