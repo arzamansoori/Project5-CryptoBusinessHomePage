@@ -56,7 +56,8 @@
 }
 .list-item:first-of-type::after {
   content: "⌄";
-  /* height: 1px; */
+  position: relative;
+  bottom: 3px;
 }
 .button-small {
   width: 130px;
